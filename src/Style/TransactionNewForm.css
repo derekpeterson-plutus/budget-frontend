@@ -1,0 +1,22 @@
+.new_form{
+    width:50%;
+    margin: auto;
+}
+
+.description{
+    font-size: 18px; 
+    margin-right: 20px;
+}
+
+input {
+    width: 150px;
+    height: 25px;
+    align-items: center;
+    margin-left: 20px;
+    border-radius: 7px;
+    border: 0.5px solid rgb(199, 196, 196);
+}
+
+input:hover {
+    cursor: pointer;
+}

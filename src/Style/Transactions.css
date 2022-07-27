@@ -1,0 +1,17 @@
+.table{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.green{
+    color:green;
+}
+
+.yellow{
+    color:rgb(166, 166, 40);
+}
+
+.red{
+    color:red;
+}
