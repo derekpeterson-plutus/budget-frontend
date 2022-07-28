@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import '../Style/Transaction.css';
+
 
 function Transaction(props) {
   const { date, item_name, amount } = props.transaction;

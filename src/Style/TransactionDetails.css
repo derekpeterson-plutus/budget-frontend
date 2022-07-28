@@ -1,9 +1,9 @@
-.details{
+.transaction_details{
     width:50%;
     margin: auto;
 }
 
 button{
-    margin:10px;
-  
+    margin: 30px;
+    font-size: 14px;
 }

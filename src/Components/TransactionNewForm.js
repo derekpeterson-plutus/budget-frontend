@@ -41,9 +41,7 @@ function TransactionNewForm() {
     <section className='new_form'>
       <form onSubmit={handleSubmit}>
         <div className='form-group'>
-          <label htmlFor='date' className='description'>
-            Date
-          </label>
+          <label htmlFor='date'>Date</label>
           <input
             id='date'
             value={transaction.date}
@@ -55,9 +53,7 @@ function TransactionNewForm() {
         </div>
         <br />
         <div>
-          <label htmlFor='item_name' className='description'>
-            Name
-          </label>
+          <label htmlFor='item_name'>Name</label>
           <input
             id='item_name'
             value={transaction.item_name}
@@ -70,9 +66,7 @@ function TransactionNewForm() {
         </div>
         <br />
         <div>
-          <label htmlFor='amount' className='description'>
-            Amount
-          </label>
+          <label htmlFor='amount'>Amount</label>
           <input
             id='amount'
             value={transaction.amount}
@@ -85,9 +79,7 @@ function TransactionNewForm() {
         </div>
         <br />
         <div>
-          <label htmlFor='from' className='description'>
-            From
-          </label>
+          <label htmlFor='from'>From</label>
           <input
             id='from'
             value={transaction.from}
@@ -100,9 +92,7 @@ function TransactionNewForm() {
         </div>
         <br />
         <div>
-          <label htmlFor='category' className='description'>
-            Category
-          </label>
+          <label htmlFor='category'>Category</label>
           <input
             id='category'
             value={transaction.category}
@@ -115,9 +105,7 @@ function TransactionNewForm() {
         </div>
         <br />
         <div>
-          <label htmlFor='type' className='description'>
-            Type
-          </label>
+          <label htmlFor='type'>Type</label>
           <input
             id='type'
             value={transaction.type}

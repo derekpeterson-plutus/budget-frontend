@@ -24,16 +24,16 @@ function TransactionDetails() {
   const deleteTransaction = () => {
     axios
       .delete(`${API}/transactions/${index}`)
-      .then((response) => {
+      .then(() => {
         navigate('/transactions');
       })
       .catch((error) => console.error('catch', error));
   };
 
   return (
-    <section className='details'>
+    <section className='transaction_details'>
       <div>
-        <table className='table table-dark'>
+        <table>
           <tbody>
             <tr>
               <td>
@@ -69,22 +69,12 @@ function TransactionDetails() {
         </table>
       </div>
       <Link to='/transactions'>
-        <button type='button' className='btn btn-outline-dark'>
-          Go Back
-        </button>
+        <button>Go Back</button>
       </Link>
       <Link to={`/transactions/${index}/edit`}>
-        <button type='button' className='btn btn-outline-dark'>
-          Edit Transaction
-        </button>
+        <button>Edit Transaction</button>
       </Link>
-      <button
-        type='button'
-        className='btn btn-outline-dark'
-        onClick={deleteTransaction}
-      >
-        Delete Transaction
-      </button>
+      <button onClick={deleteTransaction}>Delete Transaction</button>
     </section>
   );
 }

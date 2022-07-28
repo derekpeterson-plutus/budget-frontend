@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <div>
-      <h3>Developed by Sequoia Redwood Finance Group</h3>
+      <h3> 🚀 Developed by DP 🚀</h3>
     </div>
   );
 };

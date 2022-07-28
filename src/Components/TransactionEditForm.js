@@ -51,98 +51,76 @@ function TransactionEditForm() {
   return (
     <section>
       <form onSubmit={handleSubmit} className='edit_form'>
-        <div className='form-group'>
-          <label htmlFor='date' className='description'>
-            Date
-          </label>
+        <div>
+          <label htmlFor='date'>Date</label>
           <input
             id='date'
             value={transaction.date}
             type='date'
             onChange={handleTextChange}
-            className='form-control'
             required
           ></input>
         </div>
         <br />
-        <div className='form-group'>
-          <label htmlFor='item_name' className='description'>
-            Name
-          </label>
+        <div>
+          <label htmlFor='item_name'>Name</label>
           <input
             id='item_name'
             value={transaction.item_name}
             type='text'
             onChange={handleTextChange}
-            className='form-control'
             required
           ></input>
         </div>
         <br />
-        <div className='form-group'>
-          <label htmlFor='amount' className='description'>
-            Amount
-          </label>
+        <div>
+          <label htmlFor='amount'>Amount</label>
           <input
             id='amount'
             value={transaction.amount}
             type='number'
             onChange={handleTextChange}
-            className='form-control'
             required
           ></input>
         </div>
         <br />
-        <div className='form-group'>
-          <label htmlFor='from' className='description'>
-            From
-          </label>
+        <div>
+          <label htmlFor='from'>From</label>
           <input
             id='from'
             value={transaction.from}
             type='text'
             onChange={handleTextChange}
-            className='form-control'
             required
           ></input>
         </div>
         <br />
-        <div className='form-group'>
-          <label htmlFor='category' className='description'>
-            Category
-          </label>
+        <div>
+          <label htmlFor='category'>Category</label>
           <input
             id='category'
             value={transaction.category}
             type='text'
             onChange={handleTextChange}
-            className='form-control'
             required
           ></input>
         </div>
         <br />
-        <div className='form-group'>
-          <label htmlFor='type' className='description'>
-            Type
-          </label>
+        <div>
+          <label htmlFor='type'>Type</label>
           <input
             id='type'
             value={transaction.type}
             type='text'
             onChange={handleTextChange}
-            className='form-control'
             required
           ></input>
         </div>
         <br />
-        <input
-          type='submit'
-          value='Edit Item'
-          className='btn btn-outline-dark'
-        />
+        <input type='submit' value='Edit Transaction' />
       </form>
       <Link to={`/transactions/${index}`}>
-        <button className='btn btn-outline-dark'>Go Back</button>
+        <button>Cancel</button>
       </Link>
     </section>
   );

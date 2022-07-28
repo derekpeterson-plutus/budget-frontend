@@ -1,4 +1,16 @@
-.editform{
-    width:30%;
+.edit_form{
+    width: 40%;
     margin: auto;
+}
+button {
+    margin: 30px;
+    font-size: 14px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+input:hover {
+    cursor: pointer;
 }

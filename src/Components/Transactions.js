@@ -26,7 +26,11 @@ function Transactions() {
   }, [transactions]);
 
   const changeAmountColor = (amount) => {
-    return amount > 0 ? 'green' : amount <= 0 ? 'yellow' : 'red';
+    if (amount < 0) return 'red';
+    else if (amount > 1000) return 'green';
+    else {
+      return 'yellow';
+    }
   };
 
   return (
